@@ -46,39 +46,17 @@ Please follow these steps in order to setup this Python project:
 * Verify that your app has been deployed: `https://<your-appservice>.azurewebsites.net/`
 * Run load test with locust: `locust -f locustfile.py` ![Locust](locust.png)
 * Follow the official documentation to deploy your app in Azure Pipelines: [Documentation](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops)
-
-
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
-
-* Project running on Azure App Service
-
-* Project cloned into Azure Cloud Shell
-
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
-
-* Output of a test run
-
-* Successful deploy of the project in Azure Pipelines.  [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
-
 * Running Azure App Service from Azure Pipelines automatic deployment, the finished pipeline should look like this: ![CD](cd-run.png)
+* Run prediction from Azure Cloud Shell against the deployed app in App Service: `./make_predict_azure_app.sh` ![Prediction](prediction.png)
+* Output of streamed log files from deployed application: ![Logs](logs.png)
 
-* Successful prediction from deployed flask app in Azure Cloud Shell.  [Use this file as a template for the deployed prediction](https://github.com/udacity/nd082-Azure-Cloud-DevOps-Starter-Code/blob/master/C2-AgileDevelopmentwithAzure/project/starter_files/flask-sklearn/make_predict_azure_app.sh).
-The output should look similar to this:
-
-```bash
-udacity@Azure:~$ ./make_predict_azure_app.sh
-Port: 443
-{"prediction":[20.35373177134412]}
-```
-
-* Output of streamed log files from deployed application
-
-> 
 
 ## Enhancements
 
-<TODO: A short description of how to improve the project in the future>
+To improve the project, consider the following:
+
+* Add unit tests
+* Improve load test with locust to check other functionalities
 
 ## Demo 
 
