@@ -60,6 +60,6 @@ To improve the project, consider the following:
 
 ## Demo 
 
-Link to demo: https://youtu.be/XEJwVfOivMk
+Link to demo: https://youtu.be/pxrF7WxwIZg
 
 
