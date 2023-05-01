@@ -49,6 +49,7 @@ Please follow these steps in order to setup this Python project:
 * Running Azure App Service from Azure Pipelines automatic deployment, the finished pipeline should look like this: ![CD](cd-run.png)
 * Run prediction from Azure Cloud Shell against the deployed app in App Service: `./make_predict_azure_app.sh` ![Prediction](prediction.png)
 * Output of streamed log files from deployed application: ![Logs](logs.png)
+* Successful pipeline run: ![Pipeline](pipeline-success.png)
 
 
 ## Enhancements
